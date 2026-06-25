@@ -1,6 +1,21 @@
 # llm-router
 
+![tests](https://img.shields.io/badge/tests-15%20passing-brightgreen)
+![deps](https://img.shields.io/badge/dependencies-0-brightgreen)
+![node](https://img.shields.io/badge/node-%E2%89%A518-blue)
+![license](https://img.shields.io/badge/license-MIT-blue)
+
 Route each prompt to the **smallest model strong enough for it**. Cheap prompts go to Haiku, real work to Sonnet, hard reasoning to Opus. Cuts spend 70–90% on mixed traffic vs. sending everything to one big model.
+
+Zero dependencies. Works with Anthropic, OpenAI, Groq, OpenRouter — or any mix.
+
+```bash
+npx @nandukmelath/llm-router "design a distributed rate limiter with trade-offs"
+# tier 2 (heavy) · anthropic/claude-opus-4-8
+
+npx @nandukmelath/llm-router "translate hello to French"
+# tier 0 (light) · anthropic/claude-haiku-4-5
+```
 
 ## How it works
 
