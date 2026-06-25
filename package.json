@@ -1,0 +1,18 @@
+{
+  "name": "llm-router",
+  "version": "0.1.0",
+  "description": "Route each prompt to the smallest model strong enough for it — token/cost efficient.",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "llm-router": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "files": ["src/", "index.js", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "keywords": ["llm", "router", "anthropic", "claude", "openai", "groq", "cost", "tokens", "cache", "model-routing"],
+  "author": "Nandu Kannan Melath",
+  "license": "MIT"
+}
