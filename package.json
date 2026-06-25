@@ -1,6 +1,7 @@
 {
-  "name": "llm-router",
+  "name": "@nandukmelath/llm-router",
   "version": "0.1.0",
+  "publishConfig": { "access": "public" },
   "description": "Route each prompt to the smallest model strong enough for it — token/cost efficient.",
   "type": "module",
   "main": "index.js",
